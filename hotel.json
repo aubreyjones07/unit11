@@ -1,0 +1,41 @@
+{
+    "hotels": [
+    {
+        "name": "Disneyland Resort", 
+        "rooms": "50", 
+        "gym": "Yes", 
+        "spaType": "Patial Spa",
+        "roomType": ["Standard View", "Deluxe View", "Premium View"], 
+        "address": "Disneyland Dr, Anaheim, CA 92802", 
+        "picture": "disneylandresorthotelroom.jpg"
+    
+    }, 
+    {
+      
+    
+        "name": "Disneyland Grand California Hotel and Spa", 
+        "rooms": "50", 
+        "gym": "Yes", 
+        "spaType": "Full Spa", 
+        "roomType": ["Standard View", "Woods-Courtyard", "Deluxe Partial View"], 
+        "address": "1600 Disneyland Dr, Anaheim, CA 92802", 
+        "picture": "disneylandgrandcalifornianhotelroom.webp"
+    
+    }, 
+    {
+    
+        "name": "Disneyland Paradise Pier Hotel", 
+        "rooms": "50", 
+        "gym": "Yes", 
+        "spaType": "Pool",
+        "roomType": ["Standard View", "Premium View", "Standard View"], 
+        "address": "1717 South, Disneyland Dr, Anaheim, CA 92802", 
+        "picture": "disneylandparadisepierhotelroom.webp"
+    
+    
+    }
+    
+    ]
+    
+    
+    }
