@@ -22,58 +22,50 @@ async function getHotelData() {
         console.error(error)
 
     }
-}
-
-
-
-let hotelData = {}
-getHotelData().then(data => hotelData = data)
-
-
-
-    //let newLI = document.createElement('li')
-    //let newLink = document.createElement('a')
-    //newLink.setAttribute('href', menuItem.getAttribute('href'))
-    //newLink.textContent = menuItem.textContent
-    //newLI.appendChild(newLink)
-    //newList.append(newLI)
-    //document.querySelector('#smallNavArea').append(newList)
-
-
+} 
 
 
 
 // store in a variable document.querySelectorAll("a")
 // use that variable to loop over each element and add addEventListener to each one
 // I suggest using forEach =>
-//document.querySelector("#resort").addEventListener('click', hotelInfo)
 
 
-let allInfo = document.querySelectorAll("a") //.addEventListener('click', hotelInfo)
 
-allInfo.forEach(menuItem => {
-    document.querySelector("address").addEventListener('click', () => hotelInfo )
-    document.querySelector("room").addEventListener('click', () => hotelInfo )
-    document.querySelector("gym").addEventListener('click', () => hotelInfo )
-    document.querySelector("spaType").addEventListener('click', () => hotelInfo )
-    document.querySelector("type").addEventListener('click', () => hotelInfo )
-    console.log(menuItem)
+let allInfo = document.querySelectorAll("a") 
+
+allInfo.forEach(element => {
+
+    
+element.addEventListener('click', hotelInfo)
+//document.querySelector("#disneylandgrandcaliforniahotelandspa").addEventListener('click', hotelInfo)
+//document.querySelector("#disneylandparadisepierhotel").addEventListener('click', hotelInfo)
+
+    
 })
 
 
+let hotelData = {}
+getHotelData().then(data => hotelData = data)
+
 
 function hotelInfo(event){
-    let hotelChoice = hotelData.hotels.find(hotel => {
-        return event.target.id === hotel.name.toLowerCase()
-    })
-
+   let hotelChoice = hotelData.hotels.find(hotel => {
+       return event.target.id === hotel.name.toLowerCase()
+       
+    }) 
     console.log(hotelChoice)
 
-    document.querySelector("#resort").textContent = `$(hotelChoice.name) Hotel`
-    document.querySelector("#grand").textContent = `$(hotelChoice.name) Hotel`
-    document.querySelector("#paradise").textContent = `$(hotelChoice.name) Hotel`
+    
 
-
+   document.querySelector("#hotelName").textContent = `${hotelChoice.name} Hotel`
+   document.querySelector("#address").textContent = `${hotelChoice.address}`
+   document.querySelector("#room").textContent = `${hotelChoice.rooms}`
+   document.querySelector("#gym").textContent = `${hotelChoice.gym}`
+   document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
+   document.querySelector("#type").textContent = `${hotelChoice.roomType}`
+   document.querySelector("#picture").innerHTML = `${hotelChoice.picture}`
+   
 }
 
 

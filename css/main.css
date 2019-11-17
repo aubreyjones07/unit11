@@ -1,23 +1,23 @@
 body {
 font-family: "roboto"; 
-max-width: 1300px; 
+max-width: 1600px; 
 
 }
 
 
 
 
-figure.heroimage img, figure.heroimage img {width: 100%;}
-figure.heroimage {width: 100%;}
+figure.heroimage img, figure.heroimage img {width: 100%; max-width: 1600px;}
+figure.heroimage {width: 100%;  margin: 0px auto;}
 
 
 .companyname, .companyslogan {
     font-family: 'roboto';  
     position: absolute;  
-    color: #ffffff; 
-    left: 70px;
-    font-weight: bolder;
-  
+    color: white; 
+    left: 45px;
+    font-weight: 900;
+    
     
 }
 
@@ -38,7 +38,7 @@ figure.heroimage {width: 100%;}
 
 .companynamepage {
     margin-top: 10px; 
-    padding-left: 50px;   
+    padding-left: 35px;   
     padding-top: 30px; 
     padding-bottom: 10px; 
     
@@ -47,11 +47,12 @@ figure.heroimage {width: 100%;}
 
 
 .skills {
-    padding-left: 50px;
+    padding-left: 40px;
     background-color: #c0c0c0; 
     padding-top: 30px; 
     padding-bottom: 30px;
-    font-size: 24px; 
+    font-size: 36px;
+    font-variant: all-small-caps;
    
 }
 
@@ -62,47 +63,70 @@ figure.heroimage {width: 100%;}
     
 }
 
-.question {
+.hotels {
+    border: 1px solid navy;
+    margin: 0px auto; 
+    list-style-type: none; 
+    width: 50%;     
+
+
+
+}
+.hotels li {
+    padding: 10px; 
+    font-size: 20px; 
+    text-decoration: none; 
+    text-align: left; 
+    background-color: navy; 
+   
+
+}
+
+.hotels li a {
+    color: white; 
+
+}
+
+
+.hotels li a:visited, li a:link {
+    color: white; 
+    text-decoration: none; 
+
+}
+
+
+.hotels li a:hover {
+    color: navy; 
+    background-color: white;
+    width: 100%; 
+    text-decoration: none; 
+
+}
+
+
+.info {
     padding-left: 50px; 
     font-size: 20px; 
-
-
-
-}
-
-.allbuttons {
-    margin-top: 20px; 
+    border: 1px solid navy; 
 
 
 }
 
-
-
-.button { 
-    margin-top: 10px; 
-    padding: 10px; 
-    width: 100%; 
-    background-color: darkred; 
-    color: white; 
-    font-size: 20px; 
+.images {
+    margin: 0px auto; 
+    width: 400px; 
+    height: 400px; 
+    margin-bottom: 20px; 
+    z-index: 1000; 
 }
-
-
-.feedback {
-    font-size: 24px; 
-    margin: 50px; 
-
-
-}
-
 
 .copyright {
     text-align: center; 
     font-size: 14px;
     margin-top: 50px; 
     padding: 5px; 
-    background-color: #0c0804; 
-    color: white; 
+    background-color: #c0c0c0; 
+    color: black; 
    
     
 }
