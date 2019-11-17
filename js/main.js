@@ -56,15 +56,14 @@ function hotelInfo(event){
     }) 
     console.log(hotelChoice)
 
-    
-
+   
    document.querySelector("#hotelName").textContent = `${hotelChoice.name} Hotel`
    document.querySelector("#address").textContent = `${hotelChoice.address}`
    document.querySelector("#room").textContent = `${hotelChoice.rooms}`
    document.querySelector("#gym").textContent = `${hotelChoice.gym}`
    document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
    document.querySelector("#type").textContent = `${hotelChoice.roomType}`
-   document.querySelector("#picture").textContent = `${hotelChoice.picture}`
+   document.querySelector("#picture").innerText = `${hotelChoice.picture}`
 
    console.log(`${hotelChoice.picture}`)
    
