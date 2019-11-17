@@ -19,7 +19,7 @@
         "spaType": "Full Spa", 
         "roomType": ["Standard View", " Woods-Courtyard", " Deluxe Partial View"], 
         "address": "1600 Disneyland Dr, Anaheim, CA 92802", 
-        "picture": "disneylandgrandcalifornianhotelroom.webp"
+        "picture": "disneylandgrandcali.jpg"
     
     }, 
     {
@@ -30,7 +30,7 @@
         "spaType": "Pool",
         "roomType": ["Standard View", " Premium View", " Standard View"], 
         "address": "1717 South, Disneyland Dr, Anaheim, CA 92802", 
-        "picture": "disneylandparadisepierhotelroom.webp"
+        "picture": "disneylandparadisepier.jpg"
     
     
     }

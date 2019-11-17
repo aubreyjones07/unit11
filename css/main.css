@@ -113,9 +113,9 @@ figure.heroimage {width: 100%;  margin: 0px auto;}
 }
 
 .images {
-    margin: 0px auto; 
-    width: 400px; 
-    height: 400px; 
+    margin: 20px auto; 
+    width: 500px; 
+    height: 500px; 
     margin-bottom: 20px; 
     z-index: 1000; 
 }
