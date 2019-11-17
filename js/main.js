@@ -64,7 +64,7 @@ function hotelInfo(event){
    document.querySelector("#gym").textContent = `${hotelChoice.gym}`
    document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
    document.querySelector("#type").textContent = `${hotelChoice.roomType}`
-   document.querySelector("#picture").innerHTML = `${hotelChoice.picture}`
+   document.querySelector("#picture").textContent = `${hotelChoice.picture}`
    
 }
 
