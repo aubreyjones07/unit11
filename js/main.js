@@ -4,12 +4,10 @@
 /*global alert*/
 
 
-var companyTitle = "Disneyland Hotels";
-document.getElementById("company").innerHTML = companyTitle;
 
+document.querySelector('#company').innerText = `Disneyland Hotels`
+document.querySelector('#slogan').innerText = `Where the Magic Never Ends`
 
-var companySlogan = "Where the Magic Never Ends";
-document.getElementById("slogan").innerHTML = companySlogan;
 
 
 
@@ -53,9 +51,15 @@ function hotelInfo(event){
    let hotelChoice = hotelData.hotels.find(hotel => {
        return event.target.id === hotel.name.toLowerCase()
        
+       
     }) 
     console.log(hotelChoice)
 
+    let photo = new Image(500, 500)
+    photo.src = `${hotelChoice.picture}`
+    photo.setAttribute("class", "images")
+    photo.setAttribute("alt", "Hotel Room")
+    
    
    document.querySelector("#hotelName").textContent = `${hotelChoice.name} Hotel`
    document.querySelector("#address").textContent = `${hotelChoice.address}`
@@ -63,10 +67,16 @@ function hotelInfo(event){
    document.querySelector("#gym").textContent = `${hotelChoice.gym}`
    document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
    document.querySelector("#type").textContent = `${hotelChoice.roomType}`
-   document.querySelector("#picture").innerText = `${hotelChoice.picture}`
-
-   console.log(`${hotelChoice.picture}`)
+   document.querySelector("#picture").appendChild(photo) 
+   console.log(photo)
    
+   //document.querySelector("#picture").textContent = `${hotelChoice.picture}`
+   
+   
+   
+   
+   
+
 }
 
 
