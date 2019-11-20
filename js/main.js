@@ -55,11 +55,6 @@ function hotelInfo(event){
     }) 
     console.log(hotelChoice)
 
-    /*let photo = new Image(500, 500)
-    photo.src = `${hotelChoice.picture}`
-    photo.setAttribute("class", "images")
-    photo.setAttribute("alt", "Hotel Room")*/
-
 
     let photo = document.createElement("IMG")
     photo.setAttribute("id", "picture")
@@ -74,7 +69,7 @@ function hotelInfo(event){
    document.querySelector("#gym").textContent = `${hotelChoice.gym}`
    document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
    document.querySelector("#roomType").textContent = `${hotelChoice.roomType}`
-  document.body.append(photo) 
+   document.body.append(photo) 
    console.log(photo)
    
    //document.querySelector("#picture").textContent = `${hotelChoice.picture}`
