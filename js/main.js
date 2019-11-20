@@ -14,7 +14,7 @@ document.querySelector('#slogan').innerText = `Where the Magic Never Ends`
 
 async function getHotelData() {
     try {
-        const response = await fetch('./hotel.json')
+        const response = await fetch('../hotel.json')
         return await response.json() // Return the JSON object
     } catch (error) {
         console.error(error)
