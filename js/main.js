@@ -63,7 +63,7 @@ function hotelInfo(event){
 
     let photo = document.createElement("IMG")
     photo.setAttribute("id", "pictures")
-    photo.setAttribute("class", "images")
+    photo.setAttribute("class", "roomImages")
     photo.setAttribute("src", `${hotelChoice.picture}`)
     photo.setAttribute("alt", "Hotel Room")
     
@@ -74,14 +74,14 @@ function hotelInfo(event){
    document.querySelector("#gym").textContent = `${hotelChoice.gym}`
    document.querySelector("#spaType").textContent = `${hotelChoice.spaType}`
    document.querySelector("#type").textContent = `${hotelChoice.roomType}`
-   document.body.append(photo) 
+  document.body.append(photo) 
    console.log(photo)
    
    //document.querySelector("#picture").textContent = `${hotelChoice.picture}`
    //document.querySelector("#picture").appendChild(photo)
    //document.body.appendChild(photo)
   // document.getElementById("picture").append(photo)
-   
+  //document.getElementById("picture").append(photo) 
    
 
 }
